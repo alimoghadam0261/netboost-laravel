@@ -1,0 +1,39 @@
+{
+    "name": "NetBoost",
+    "short_name": "NetBoost",
+    "theme_color": "#38bdf8",
+    "background_color": "#38bdf8",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "./img/icon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./img/icon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./img/icon/android-chrome-512x512.png",
+            "sizes": "1200x800",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./img/icon/android-chrome-192x192.png",
+            "sizes": "430x932",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ]
+
+
+}

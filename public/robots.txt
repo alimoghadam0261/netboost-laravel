@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /sitemap.xmlx
+Sitemap: https://netboost.ir/sitemap.xml
