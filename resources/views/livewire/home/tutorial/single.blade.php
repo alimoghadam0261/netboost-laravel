@@ -3,23 +3,43 @@
         <p class="text-[14px] text-gray-400">تمامی ویدیو های آموزشی در کانال یوتوب برای شما عزیزان قرار گرفته تا بتوانید
             به رایگان استفاده کنید(فراموش نکنید که فیلتر شکن روشن باشد) </p>
         <div class="flex justify-around">
-            <div>
-                <img src="{{asset('storage/'.$tutorials->pic)}}" alt="$tutorials->title" loading="lazy"
-                     class="w-[400px] h-[450px] rounded-md">
+            <div class="w-full flex justify-center">
+                <img
+                    src="{{ asset('storage/'.$tutorials->pic) }}"
+                    alt="{{ $tutorials->title }}"
+                    loading="lazy"
+                    class="w-4/5 max-w-xs md:max-w-md lg:max-w-lg aspect-square object-cover rounded-md"
+                >
             </div>
-            <div>
-                <h1 class="bg-sky-100 text-center rounded-md p-2 text-[20px]  mobile-single-title  "><strong>عنوان
-                        : {{$tutorials->title}}</strong></h1><br><br>
-                <h1 class="bg-sky-200 text-center rounded-md p-2 text-[20px]  mobile-single-title "><strong>دسته بندی
-                        : {{$tutorials->category}}</strong></h1><br><br>
-                <h1 class="bg-sky-300 text-center rounded-md p-2 text-[20px]  mobile-single-title "><strong>فایل صوتی این آموزش </strong></h1>
-                <br>
+
+            <div class="space-y-4 px-4 sm:px-6 md:px-8">
+                <h1
+                    class="bg-sky-100 text-center rounded-md p-2 sm:p-3 md:p-4 text-base sm:text-lg md:text-xl"
+                >
+                    <strong>عنوان : {{ $tutorials->title }}</strong>
+                </h1>
+
+                <h1
+                    class="bg-sky-200 text-center rounded-md p-2 sm:p-3 md:p-4 text-base sm:text-lg md:text-xl"
+                >
+                    <strong>دسته‌بندی : {{ $tutorials->category }}</strong>
+                </h1>
+
+                <h1
+                    class="bg-sky-300 text-center rounded-md p-2 sm:p-3 md:p-4 text-base sm:text-lg md:text-xl"
+                >
+                    <strong>فایل صوتی این آموزش</strong>
+                </h1>
+
                 @if(!$tutorials->voice)
-                    <p class="text-gray-400">این آموزش فایل صوتی ندارد</p>
+                    <p class="text-gray-400 text-sm sm:text-base">این آموزش فایل صوتی ندارد</p>
                 @else
-                    <audio controls class="w-full bg-gray-200 rounded-lg">
-                        <source src="{{asset('storage/'.$tutorials->voice)}}" type="audio/mp3">
-                        مرورگر شما از تگ <code>audio</code> پشتیبانی نمی‌کند.
+                    <audio
+                        controls
+                        class="w-full sm:w-11/12 md:w-3/4 bg-gray-200 rounded-lg"
+                    >
+                        <source src="{{ asset('storage/'.$tutorials->voice) }}" type="audio/mp3">
+                        مرورگر شما از تگ <code>audio</code> پشتیبان  نمی‌کند..
                     </audio>
                 @endif
             </div>
@@ -31,9 +51,9 @@
             <h1 class="text-gray-500 text-[20px]">آموزش های مرتبط که برای شما مفید است </h1><br>
 
             <!-- ظرف اسکرول‌پذیر -->
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto w-[100%]">
                 <!-- Flex container بدون wrap و با فاصله بین آیتم‌ها -->
-                <div class="flex flex-nowrap space-x-4 border-2 p-2 rounded-md">
+                <div class="flex flex-nowrap space-x-4  p-1">
                     @foreach($relatedTutorials as $tutorial)
                         <div class="flex-none w-28 h-28 md:w-36 md:h-36 transition-all duration-300 hover:scale-[1.01] transform origin-center sugg">
                             <img
