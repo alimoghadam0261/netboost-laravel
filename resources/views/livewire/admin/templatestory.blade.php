@@ -4,15 +4,15 @@
         <form wire:submit.prevent="save" class="mb-6" enctype="multipart/form-data">
 
             <div class="mb-4">
-                <input type="text" wire:model="title" class="w-full border-gray-300 rounded-lg p-2" placeholder="عنوان عکس">
+                <input type="text" wire:model="title" name="title" class="w-full border-gray-300 rounded-lg p-2" placeholder="عنوان عکس">
                 @error('title') <span class="text-red-500">{{ $message }}</span> @enderror
             </div>
             <div class="mb-4">
-                <input type="file" wire:model="img" class="w-full border-gray-300 rounded-lg p-2" accept="image/*">
+                <input type="file" wire:model="img" name="img" class="w-full border-gray-300 rounded-lg p-2" accept="image/*">
                 @error('img') <span class="text-red-500">{{ $message }}</span> @enderror
             </div>
             <div class="mb-4">
-                <label for="">دسته بندی:</label>
+                <label for="category">دسته بندی:</label>
                 <select wire:model="category">
                     <option value="">انتخاب کنید</option>
                     <option value="بکگراند">بکگراند</option>
