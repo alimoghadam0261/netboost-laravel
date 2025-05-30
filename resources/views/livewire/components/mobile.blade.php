@@ -34,6 +34,12 @@
         </ul>
         <br><br>
         <br><br>
+        <div class="flex justify-around social-media-footer">
+            <a href="https://instagram.com/ariyabodgroup" aria-label="صفحه اینستاگرام آریابُد" ><i class="fa-brands fa-instagram fa-2x m-2 transition-all duration-400 hover:text-white hover:scale-[1.1]"></i></a>
+            <a href="https://www.youtube.com/@NetBoost021" aria-label="صفحه یوتوب آریابُد" ><i class="fa-brands fa-youtube fa-2x m-2 transition-all duration-400 hover:text-white hover:scale-[1.1]"></i></a>
+            <a href="https://t.me/ariyabodgroup" aria-label="صفحه تلگرام آریابُد" ><i class="fa-brands fa-telegram fa-2x m-2 transition-all duration-400 hover:text-white hover:scale-[1.1]"></i></a>
+            <a href="mailto:netboost021@gmail.com" aria-label="صفحه ارسال ایمیل آریابُد"><i class="fa fa-envelope fa-2x m-2 transition-all duration-400 hover:text-white hover:scale-[1.1]"></i></a>
+        </div>
     </div>
 
 </div>

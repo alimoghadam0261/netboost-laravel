@@ -49,22 +49,22 @@
 
     </div>
     <div class="w-full flex flex-col items-center justify-center mt-4">
-        <div class="flex">
-        <button
-            class="bg-pink-300 w-[250px] h-[50px] p-2 rounded-md transition-all duration-300 hover:bg-pink-600"
-            id="btn-chatbot">چت با هوش مصنوعی رایگان
-        </button>
+        <div class="flex flex-wrap justify-center gap-2">
+            <button
+                class="bg-pink-300 w-40 md:w-60 h-10 md:h-12 px-2 md:px-4 py-1 md:py-2 rounded-md text-sm md:text-base transition-all duration-300 hover:bg-pink-600"
+                id="btn-chatbot">
+                چت با هوش مصنوعی
+            </button>
             <a href="">
-        <button
-            class="bg-sky-300 w-[250px] h-[50px] p-2 mx-2 rounded-md transition-all duration-300 hover:bg-sky-600">
-            ربات همه کاره
-        </button>
+                <button
+                    class="bg-sky-300 w-40 md:w-60 h-10 md:h-12 px-2 md:px-4 py-1 md:py-2 rounded-md text-sm md:text-base transition-all duration-300 hover:bg-sky-600">
+                    ربات همه کاره
+                </button>
             </a>
         </div>
-        <p class="text-[12px] my-2 text-gray-600 text-center max-w-xs sm:max-w-md md:max-w-lg">
+        <p class="text-xs sm:text-sm text-gray-600 text-center max-w-xs sm:max-w-md md:max-w-lg my-2">
             هوش مصنوعی در مراحل اولیه می‌باشد. و زبان فارسی را به درستی پشتیبانی نمی کند.
         </p>
-
     </div>
 
 
@@ -181,7 +181,8 @@
         <br>
         <br>
         <div class="flex flex-col lg:flex-row items-center justify-center">
-            <div class="circle-index mb-4 lg:mb-0"></div>
+            <div class="circle-index hidden lg:block mb-4 lg:mb-0"></div>
+
             <div class="mb-4 lg:mb-0">
                 <ul class="space-y-2">
                     <li class="mx-[-30px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
@@ -207,7 +208,7 @@
                 </ul>
             </div>
             <div dir="ltr" class="w-full lg:w-[40%] bg-sky-100 tetx-gray-800 rounded-[15px] text-center mx-4">
-                <p class="p-2">
+                <p class="p-2 mx-1">
                     در این سایت بیش از 30 قسمت مختلف برای شما عزیزان مهیا شده است که شما با هر سلیقه‌ای بتوانید نیاز خود
                     را برآورده کنید.
                     تمامی قسمت‌ها روزانه در حال آپدیت و به‌روز رسانی می‌باشند تا شما بتوانید بهترین خروجی را برای خود به
@@ -224,7 +225,7 @@
         <div class="flex flex-col lg:flex-row items-center justify-center">
             <img src="{{asset('./img/defult/webp/telegramaiagent.webp')}}" width="300" height="300"
                  alt="aiagent telegram" loading="lazy" class="img-ai-agent"/>
-            <p>
+            <p class="mr-[15px]">
                 امروز که کاربران به دنبال تجارب سریع، جذاب و مفید در ویدیو و سایتها هستند، نداشتن یک دستیار شبکه‌های
                 اجتماعی هوشمند، به معنای از دست رفتن فرصت‌های طلایی است. با این راهکار کم‌هزینه، می‌توانید در افزایش
                 تعامل و رشد فالوئر هدفمند پیشتاز باشید، بدون آنکه هزینه‌های سنگین استخدام نیروی انسانی یا خرید ابزارهای

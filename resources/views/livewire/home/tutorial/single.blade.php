@@ -30,19 +30,28 @@
         <div>
             <h1 class="text-gray-500 text-[20px]">آموزش های مرتبط که برای شما مفید است </h1><br>
 
-            <div class="flex justify-around border-2 h-auto p-2 rounded-md">
-            <div class="flex justify-around border-2 h-auto p-2  rounded-md">
-
-                @foreach($relatedTutorials as $tutorial)
-                    <div
-                        class="w-[150px] h-[150px] transition-all duration-300 hover:scale-[1.01] transform origin-center sugg">
-                        <img src="{{ asset('storage/'.$tutorial->pic) }}" alt="{{ $tutorial->title }}" loading="lazy"
-                             class="w-[100px] h-[100px] rounded-[50%] img-sugg "><br>
-                        <a href="{{route('single', ['id' => $tutorial->id]) }}"><h1 class="text-sky-400 hover:text-sky-700 text-[14px] mobile-single-title ">{{$tutorial->title}}</h1></a>
-
-                    </div>
-                @endforeach
+            <!-- ظرف اسکرول‌پذیر -->
+            <div class="overflow-x-auto">
+                <!-- Flex container بدون wrap و با فاصله بین آیتم‌ها -->
+                <div class="flex flex-nowrap space-x-4 border-2 p-2 rounded-md">
+                    @foreach($relatedTutorials as $tutorial)
+                        <div class="flex-none w-28 h-28 md:w-36 md:h-36 transition-all duration-300 hover:scale-[1.01] transform origin-center sugg">
+                            <img
+                                src="{{ asset('storage/'.$tutorial->pic) }}"
+                                alt="{{ $tutorial->title }}"
+                                loading="lazy"
+                                class="w-20 h-20 md:w-28 md:h-28 rounded-full img-sugg mx-auto"
+                            >
+                            <a href="{{ route('single', ['id' => $tutorial->id]) }}">
+                                <h1 class="text-sky-400 hover:text-sky-700 text-xs md:text-sm text-center mt-2 mobile-single-title">
+                                    {{ $tutorial->title }}
+                                </h1>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
             </div>
+
         </div>
         <br>
 
