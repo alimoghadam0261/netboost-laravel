@@ -1,7 +1,7 @@
 <div>
     <div class="container mx-auto p-4">
         {{-- فرم آپلود --}}
-        <form wire:submit.prevent="save" class="mb-6">
+        <form wire:submit.prevent="save" class="mb-6" enctype="multipart/form-data">
 
             <div class="mb-4">
                 <input type="text" wire:model="title" class="w-full border-gray-300 rounded-lg p-2" placeholder="عنوان عکس">

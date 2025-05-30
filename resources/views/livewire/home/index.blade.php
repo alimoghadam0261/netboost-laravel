@@ -55,7 +55,7 @@
                 id="btn-chatbot">
                 چت با هوش مصنوعی
             </button>
-            <a href="">
+            <a href="" id="modalBot">
                 <button
                     class="bg-sky-300 w-40 md:w-60 h-10 md:h-12 px-2 md:px-4 py-1 md:py-2 rounded-md text-sm md:text-base transition-all duration-300 hover:bg-sky-600">
                     ربات همه کاره
@@ -272,5 +272,12 @@
                 chatbot.style.display = 'none'
             }
         })
+
+
+        const modalBot = document.getElementById('modalBot');
+        modalBot.addEventListener('click',()=>{
+            alert('در دست ساخت و بهینه سازی می باشد و به زودی به رایگان در اختیار شما عزیزران قرار میگیرد')
+        })
+
     </script>
 </div>

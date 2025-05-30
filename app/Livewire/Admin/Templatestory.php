@@ -22,7 +22,8 @@ class Templatestory extends Component
         $this->validate([
             'title' => 'required',
             'category' => 'required',
-            'img' => 'required|image|max:5120',
+            'img' => 'required|file|mimes:jpeg,png,jpg,gif|max:10240',
+
         ]);
 
         $filePath = $this->img->store('templatestory', 'public');
